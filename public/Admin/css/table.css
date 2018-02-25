@@ -1,0 +1,95 @@
+.widget{
+	border:1px solid rgba(211,211,211,1);
+
+}
+.title{
+	border-bottom: 1px solid rgba(211,211,211,1);
+	height: 40px;
+	float: left;
+	width: 100%;
+}
+.titleIcon{
+	float: left;
+	padding: 4px;
+	border-right: 1px solid rgba(211,211,211,1);
+	line-height: 32px;
+}
+h6{
+	float: left;
+	width: 80%;
+	padding: 4px;
+	line-height: 32px;
+	font-size: 26px;
+
+}
+.num{
+	width:70px;
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	font-weight: 600;
+}
+.contens form{
+	padding: 10px;
+}
+.contens table   tr td{
+	text-align: center;
+	border: 1px solid rgba(211,211,211,1);
+	padding: 10px;
+}
+
+
+.clear {
+	clear: both;
+}
+.delete,.add{
+	width: 70px;
+	float: left;
+	margin: 10px;
+	text-align: center;
+}
+.delete button{
+	width: 100%;
+	background: rgba(0,128,128,.5);
+	outline: none;
+	float: left;
+	border:2px double #CDB5CD;
+}
+.delete a{
+	width: 100%;	
+	height: 30px;
+	line-height: 30px;
+	color: white;
+}
+.add{
+	float: right;
+	padding: 2px;
+	width: 200px;
+}
+.add a {
+    display: block;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #626262;
+    border: 1px solid rgba(211,211,211,1);
+}
+
+.add a img {
+    float: left;
+    margin: 12px 12px 10px 12px;
+}
+.add a span {
+    display: block;
+    margin: 0px 0 0 40px;
+    padding: 10px 16px 8px 16px;
+    border-left: 1px solid #d5d5d5;
+}
+.adds table   tr td{
+	text-align: left;
+	border: 1px solid rgba(211,211,211,1);
+	padding: 10px;
+}
+.adds input{
+	padding: 4px;
+	width: 50%;
+}

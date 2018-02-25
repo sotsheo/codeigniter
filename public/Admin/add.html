@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/stype.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/core/reset.css" media="screen" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/table.css">
+
+</head>
+<body>
+	<div class="head">
+		<h3 class="tieude">Project</h3>
+		<div class="img_admin">
+			<img src="jmg/icon/admin.png">
+			<p><a href="#">Admin</a></p>
+		</div>
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="">Sản phẩm</a></li>
+			<li><a href="">Nhập hàng</a></li>
+			<li><a href="">Xuất hàng</a></li>
+			<li><a href="">Thống kê</a></li>
+			
+
+		</ul>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="content" >
+		<div class="wrapper" id="main_product">
+	<div class="widget">
+	
+		<div class="title">
+			<span class="titleIcon"><img src="jmg/icon/plus.png"></span>
+			<h6>
+				Thêm sản phẩm mới		</h6>
+		 	
+		</div>		
+		<div style="clear: both;"></div>
+		<div class="adds">
+			<table style="border-collapse: collapse;" width="100%" >
+				 <form action="" method="POST" role="form">
+					<tr >
+						<td style="width: 200px;">Tên</td>
+						<td><input type="text" name="name" placeholder="Nhập tên cho sản phẩm"></td>
+					</tr>
+					<tr>
+						<td>Số lượng</td>
+						<td><input type="text" name="name" required="" placeholder="Nhập số lượng sản phẩm"></td>
+					</tr>
+					<tr>
+						<td>Giá nhập</td>
+						<td><input type="text" name="name" required="" placeholder="Nhập giá nhập  cho sản phẩm"></td>
+					</tr>
+					<tr>
+						<td>Giá bán</td>
+						<td><input type="text" name="name" required="" placeholder="Nhập giá bán cho  sản phẩm"></td>
+					</tr>
+					<tr>
+						<td>Giảm giá</td>
+						<td><input type="text" name="name" placeholder="Nhập giảm giá sản phẩm"</td>
+					</tr>
+					<tr>
+						<td>Ảnh</td>
+						<td><input id="file" type="file" name="sortpic" required="" /><img class="imgs" src="jmg/product.png" width="50px;" height="50px;"></td>
+					</tr>
+					<tr>
+						<td>Danh mục sản phẩm</td>
+						<td>
+							<select>
+								<option>Nhà ở</option>
+								<option>Quần áo</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Kiểu sản phẩm</td>
+						<td>
+							<select>
+								<option>Nhà ở</option>
+								<option>Quần áo</option>
+							</select>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>Mã</td>
+						<td><input type="text" name="name" required="" placeholder="Nhập mã cho  sản phẩm"></td>
+					</tr>
+				</form>
+			</table>
+		</div>
+		
+	</div>
+
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){			
+			document.getElementById('file').onchange = function() {
+	   		var fileInput = document.getElementById('file');
+				var filePath = fileInput.value;//lấy giá trị input theo id
+				var allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;//các tập tin cho phép
+				//Kiểm tra định dạng
+				if(!allowedExtensions.exec(filePath)){
+				alert('Vui lòng upload các file có định dạng: .jpeg/.jpg/.png/.gif only.');
+				fileInput.value = '';
+				return false;
+				}else{
+				//Image preview
+				if (fileInput.files && fileInput.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function(e) {      
+					
+				};
+				reader.readAsDataURL(fileInput.files[0]);
+				}
+			}
+		};
+		
+		});
+		
+		
+	</script>
+</body>
+</html>

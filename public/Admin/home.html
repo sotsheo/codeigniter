@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/stype.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/core/reset.css" media="screen" />	
+	<link rel="stylesheet" type="text/css" href="css/table.css">
+
+</head>
+<body>
+	<div class="head">
+		<h3 class="tieude">Project</h3>
+		<div class="img_admin">
+			<img src="jmg/icon/admin.png">
+			<p><a href="#">Admin</a></p>
+		</div>
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="">Sản phẩm</a></li>
+			<li><a href="">Nhập hàng</a></li>
+			<li><a href="">Xuất hàng</a></li>
+			<li><a href="">Thống kê</a></li>
+
+		</ul>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="content" >
+		<div class="wrapper" id="main_product">
+	<div class="widget">
+	
+		<div class="title">
+			<span class="titleIcon"><input type="checkbox" id="titleCheck" name="titleCheck"></span>
+			<h6>
+				Danh sách sản phẩm			</h6>
+		 	<div class="num f12">Số lượng: <b>0</b></div>
+		</div>		
+		<div style="clear: both;"></div>
+		<div class="contens">
+			<form action="" method="post">
+								<label style="margin: 10px;">Ten san pham</label>
+								<input type="tex" name="name" placeholder="Nhap ten san pham" style="padding: 4px;">
+								<label style="margin: 10px;">Danh sach </label><select>
+									<optgroup label="Tv">
+										<option value="LG">LG</option>
+										<option value="Samsung">SamSung</option>
+									</optgroup>
+									
+								</select>
+								<input type="submit" name="submit" value="Loc" style="padding:4px; ">
+								<input type="button" name="button" value="Reset" style="padding:4px; ">
+							</form>
+			<table width="100%" style="border-collapse: collapse;">
+				
+				<thead>
+					<tr>
+						<td style="width:21px;"><img src="jmg/icon/tableArrows.png" /></td>
+						<td style="width:60px;">Mã số</td>
+						<td>Tên</td>
+						<td style="width:100px;">Giá</td>
+						<td style="width:75px;">Ngày tạo</td>
+						<td style="width:75px;">Người nhập</td>
+						<td style="width:120px;">Hành động</td>
+					</tr>
+			</thead>
+			<tbody class="list_item">
+
+
+			      	<tr class='row_9'>
+							<td><input type="checkbox" name="id[]" value="9" /></td>
+							
+							<td class="textC">9</td>
+							
+							<td>
+							<div class="image_thumb">
+								<img src="jmg/product.png" height="50">
+								<div class="clear"></div>
+							</div>
+							
+							<a href="product/view/9.html" class="tipS" title="" target="_blank">
+							<b>Tivi LG 520</b>
+							</a>
+							
+							<div class="f11" >
+							  Đã bán: 0	</div>
+								
+							</td>
+							
+							<td class="textR">5,400,000 đ
+		                           				
+							</td>
+							<td class="textC">01-01-1970</td>
+							</td>
+							<td class="textC">Hoang</td>
+							
+							
+							<td class="option textC">
+								 <a href="admin/product/edit/9.html" title="Chỉnh sửa" class="tipS">
+									<img src="jmg/icon/edit.png" />
+								</a>
+								
+								<a href="admin/product/del/9.html" title="Xóa" class="tipS verify_action" >
+								    <img src="jmg/icon/delete.png" />
+								</a>
+							</td>
+					</tr>
+
+					<tr class='row_9'>
+							<td><input type="checkbox" name="id[]" value="9" /></td>
+							
+							<td class="textC">9</td>
+							
+							<td>
+							<div class="image_thumb">
+								<img src="jmg/product.png" height="50">
+								<div class="clear"></div>
+							</div>
+							
+							<a href="product/view/9.html" class="tipS" title="" target="_blank">
+							<b>Tivi LG 520</b>
+							</a>
+							
+							<div class="f11" >
+							  Đã bán: 0	</div>
+								
+							</td>
+							
+							<td class="textR">5,400,000 đ
+		                           				
+							</td>
+							<td class="textC">01-01-1970</td>
+							</td>
+							<td class="textC">Hoang</td>
+							
+							
+							<td class="option textC">
+								 <a href="admin/product/edit/9.html" title="Chỉnh sửa" class="tipS">
+									<img src="jmg/icon/edit.png" />
+								</a>
+								
+								<a href="admin/product/del/9.html" title="Xóa" class="tipS verify_action" >
+								    <img src="jmg/icon/delete.png" />
+								</a>
+							</td>
+					</tr>					
+							
+				</tbody>
+				
+			</table>
+			<div class="delete" >
+				 <button><a href="#" >Xóa hết</a></button>
+			</div>
+			<div class="add" >
+				<a href="#">
+					<img src="jmg/icon/plus.png">
+					<span>Thêm mới</span>
+				</a>
+			</div>
+			<div style="clear: both;"></div>
+
+		</div>
+
+
+	</div>
+		
+	</div>
+
+	</div>
+</body>
+</html>
